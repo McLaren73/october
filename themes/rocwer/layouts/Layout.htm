@@ -1,0 +1,90 @@
+[localePicker]
+forceUrl = 1
+==
+<!DOCTYPE html>
+<html lang="cs">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="theme-color" content="#e6b920" />
+        
+        <title>{{ this.page.title }} | October site</title>
+        
+        <meta name="description" content="{{ metaDescription }}">
+        <meta name="author" content="netpromotion group s.r.o.">
+        <meta name="robots" content="index, follow">
+        
+        <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+        <link href="{{ ['assets/scss/style.scss']|theme }}" rel="stylesheet">
+        
+        {% styles %}
+
+    </head>
+    
+    <body>
+    	
+	<nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item {% if this.page.id == 'uvod' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'uvod'|page }}">Formuláře</a>
+          </li>
+          <li class="nav-item {% if this.page.id starts with 'blog' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'blog'|page }}">Blog</a>
+          </li>
+          <li class="dropdown {% if this.page.id in ['katalog','mrkev'] %}active{% endif %}">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Katalogy <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li class="{% if this.page.id == 'katalog' %}active{% endif %}"><a href="{{ 'katalog/kategorie'|page }}">Catalog</a></li>
+	            {#
+	            <li role="separator" class="divider"></li>
+	            <li class="dropdown-header">E-shopy</li>
+	            <li><a href="#">JK Shop</a></li>
+	            <li><a href="#">Octoshop</a></li>
+	            #}
+	          </ul>
+	      </li>
+          <li class="nav-item {% if this.page.id == 'staticke-stranky' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'staticke-stranky'|page }}">Statické stránky</a>
+          </li>
+          <li class="nav-item {% if this.page.id == 'galerie' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'galerie'|page }}">Galerie</a>
+          </li>
+          <li class="nav-item {% if this.page.id == 'rezervace' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'rezervace'|page }}">Rezervace</a>
+          </li>
+          <li class="nav-item {% if this.page.id == 'preklady' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'preklady'|page }}">Překlady</a>
+          </li>
+          <li class="nav-item {% if this.page.id == 'knihy' %}active{% endif %}">
+            <a class="nav-link" href="{{ 'knihy'|page }}">Builder</a>
+          </li>
+        </ul>
+        <div class="lang">
+        	{% component 'localePicker' %}
+        </div>
+      </div>
+    </nav>
+        
+    <header>
+    </header>
+    
+    {# main content #}
+    <div class="content">{% page %}</div>
+    
+    <footer>OCTOBER CMS TEST SITE</footer>
+    
+    {# js #}
+	<script src="{{ [
+	    '@jquery',
+	    'assets/js/bootstrap.min.js',
+	    '@framework',
+	    '@framework.extras',
+	]|theme }}"></script>
+
+	{% scripts %}
+		
+    </body>
+</html>

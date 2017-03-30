@@ -1,0 +1,48 @@
+1490877947a:1:{s:8:"blog.htm";a:11:{s:8:"fileName";s:8:"blog.htm";s:7:"content";s:754:"title = "Blog"
+url = "/blog/:page?"
+layout = "Layout"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = ":slug"
+postsPerPage = 5
+noPostsMessage = "Žádné příspěvky."
+sortOrder = "published_at desc"
+categoryPage = "blog/kategorie"
+postPage = "blog/clanek"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "blog/kategorie"
+==
+<div class="container">
+
+	<h2 class="headline">Blog - výpis článků</h2>
+	<p class="description">Jedná se o plugin <a href="//octobercms.com/plugin/rainlab-blog" target="_blank">Blog</a>.</p>
+	
+	<div class="row">
+		<div class="col-sm-8">
+			{% component 'blogPosts' %}
+		</div>
+		<div class="col-sm-4">
+			{% component 'blogCategories' %}
+		</div>
+	</div>
+	
+</div>";s:5:"mtime";i:1490084886;s:6:"markup";s:382:"<div class="container">
+
+	<h2 class="headline">Blog - výpis článků</h2>
+	<p class="description">Jedná se o plugin <a href="//octobercms.com/plugin/rainlab-blog" target="_blank">Blog</a>.</p>
+	
+	<div class="row">
+		<div class="col-sm-8">
+			{% component 'blogPosts' %}
+		</div>
+		<div class="col-sm-4">
+			{% component 'blogCategories' %}
+		</div>
+	</div>
+	
+</div>";s:4:"code";N;s:5:"title";s:4:"Blog";s:3:"url";s:12:"/blog/:page?";s:6:"layout";s:6:"Layout";s:9:"is_hidden";s:1:"0";s:9:"blogPosts";a:7:{s:10:"pageNumber";s:11:"{{ :page }}";s:14:"categoryFilter";s:5:":slug";s:12:"postsPerPage";s:1:"5";s:14:"noPostsMessage";s:22:"Žádné příspěvky.";s:9:"sortOrder";s:17:"published_at desc";s:12:"categoryPage";s:14:"blog/kategorie";s:8:"postPage";s:11:"blog/clanek";}s:14:"blogCategories";a:3:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"0";s:12:"categoryPage";s:14:"blog/kategorie";}}}

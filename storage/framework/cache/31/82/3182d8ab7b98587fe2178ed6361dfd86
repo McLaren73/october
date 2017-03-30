@@ -1,0 +1,42 @@
+1490877947a:1:{s:16:"detail-knihy.htm";a:11:{s:8:"fileName";s:16:"detail-knihy.htm";s:7:"content";s:663:"title = "Detail Knihy"
+url = "/kniha/:slug"
+layout = "Layout"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Netpromotion\Library\Models\Book"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "title"
+notFoundMessage = "Record not found"
+
+[viewBag]
+localeUrl[en] = "/detail-knihy"
+==
+<div class="container">
+
+	{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+{% if record %}
+    <h1>{{ attribute(record, displayColumn) }}</h1>
+    {{ record.short_description|raw }}
+{% else %}
+    {{ notFoundMessage }}
+{% endif %}
+
+</div>";s:5:"mtime";i:1490779480;s:6:"markup";s:358:"<div class="container">
+
+	{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+{% if record %}
+    <h1>{{ attribute(record, displayColumn) }}</h1>
+    {{ record.short_description|raw }}
+{% else %}
+    {{ notFoundMessage }}
+{% endif %}
+
+</div>";s:4:"code";N;s:5:"title";s:12:"Detail Knihy";s:3:"url";s:12:"/kniha/:slug";s:6:"layout";s:6:"Layout";s:9:"is_hidden";s:1:"0";s:14:"builderDetails";a:5:{s:10:"modelClass";s:32:"Netpromotion\Library\Models\Book";s:15:"identifierValue";s:11:"{{ :slug }}";s:14:"modelKeyColumn";s:4:"slug";s:13:"displayColumn";s:5:"title";s:15:"notFoundMessage";s:16:"Record not found";}s:7:"viewBag";a:1:{s:9:"localeUrl";a:1:{s:2:"en";s:13:"/detail-knihy";}}}}

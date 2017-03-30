@@ -1,0 +1,40 @@
+1490877947a:1:{s:11:"galerie.htm";a:10:{s:8:"fileName";s:11:"galerie.htm";s:7:"content";s:664:"title = "Galerie"
+url = "/galerie"
+layout = "Layout"
+is_hidden = 0
+
+[galleryId]
+idGallery = 1
+lang = "Gallery"
+jqueryinject = "yes"
+thumbnail = "true"
+caption = "true"
+desc = "true"
+counter = "true"
+controls = "true"
+preload = 1
+mode = "fade"
+speed = 500
+loop = "true"
+auto = "false"
+pause = 2000
+escKey = "true"
+height = 200
+width = 200
+resizer = "crop"
+==
+<div class="container">
+
+	<h2 class="headline">Galerie</h2>
+	<p class="description">Jedná se o plugin <a href="//octobercms.com/plugin/raviraj-rjgallery" target="_blank">RJGallery</a>. Umožňuje tvorbu různých galerií a přiřazování do kategorií.</p>
+	
+	{% component 'galleryId' %}
+	
+</div>";s:5:"mtime";i:1490279947;s:6:"markup";s:306:"<div class="container">
+
+	<h2 class="headline">Galerie</h2>
+	<p class="description">Jedná se o plugin <a href="//octobercms.com/plugin/raviraj-rjgallery" target="_blank">RJGallery</a>. Umožňuje tvorbu různých galerií a přiřazování do kategorií.</p>
+	
+	{% component 'galleryId' %}
+	
+</div>";s:4:"code";N;s:5:"title";s:7:"Galerie";s:3:"url";s:8:"/galerie";s:6:"layout";s:6:"Layout";s:9:"is_hidden";s:1:"0";s:9:"galleryId";a:18:{s:9:"idGallery";s:1:"1";s:4:"lang";s:7:"Gallery";s:12:"jqueryinject";s:3:"yes";s:9:"thumbnail";s:4:"true";s:7:"caption";s:4:"true";s:4:"desc";s:4:"true";s:7:"counter";s:4:"true";s:8:"controls";s:4:"true";s:7:"preload";s:1:"1";s:4:"mode";s:4:"fade";s:5:"speed";s:3:"500";s:4:"loop";s:4:"true";s:4:"auto";s:5:"false";s:5:"pause";s:4:"2000";s:6:"escKey";s:4:"true";s:6:"height";s:3:"200";s:5:"width";s:3:"200";s:7:"resizer";s:4:"crop";}}}

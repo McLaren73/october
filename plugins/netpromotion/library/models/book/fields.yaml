@@ -1,0 +1,31 @@
+fields:
+    title:
+        label: 'netpromotion.library::lang.book.title'
+        oc.commentPosition: ''
+        span: auto
+        required: 1
+        type: text
+    slug:
+        label: 'netpromotion.library::lang.book.slug'
+        oc.commentPosition: ''
+        span: auto
+        preset:
+            field: title
+            type: slug
+        type: text
+    author:
+        label: 'netpromotion.library::lang.book.author'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    year:
+        label: 'netpromotion.library::lang.book.year'
+        oc.commentPosition: ''
+        span: auto
+        type: text
+    short_description:
+        label: 'netpromotion.library::lang.book.short_description'
+        size: large
+        oc.commentPosition: ''
+        span: full
+        type: richeditor

@@ -1,0 +1,28 @@
+1490877947a:1:{s:28:"katalog/detail-kategorie.htm";a:10:{s:8:"fileName";s:28:"katalog/detail-kategorie.htm";s:7:"content";s:467:"title = "Detail Kategorie"
+url = "/katalog/detail-kategorie/:slug"
+layout = "Layout"
+is_hidden = 0
+
+[product_list]
+categorySlug = "{{ :slug }}"
+sortOrder = "title asc"
+useCategoryFilter = 0
+productPage = "katalog/produkt"
+productPageSlug = "{{ :slug }}"
+noProductsMessage = "No product found"
+productsPerPage = 10
+pageParam = ":page"
+==
+<div class="container">
+	
+	<h2 class="headline">Katalog – detail kategorie</h2>
+	
+	{% component 'product_list' %}
+	
+</div>";s:5:"mtime";i:1490692230;s:6:"markup";s:130:"<div class="container">
+	
+	<h2 class="headline">Katalog – detail kategorie</h2>
+	
+	{% component 'product_list' %}
+	
+</div>";s:4:"code";N;s:5:"title";s:16:"Detail Kategorie";s:3:"url";s:31:"/katalog/detail-kategorie/:slug";s:6:"layout";s:6:"Layout";s:9:"is_hidden";s:1:"0";s:12:"product_list";a:8:{s:12:"categorySlug";s:11:"{{ :slug }}";s:9:"sortOrder";s:9:"title asc";s:17:"useCategoryFilter";s:1:"0";s:11:"productPage";s:15:"katalog/produkt";s:15:"productPageSlug";s:11:"{{ :slug }}";s:17:"noProductsMessage";s:16:"No product found";s:15:"productsPerPage";s:2:"10";s:9:"pageParam";s:5:":page";}}}

@@ -1,0 +1,16 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: tiipiik.catalog::lang.config.form.brand_name
+form: $/tiipiik/catalog/models/brand/fields.yaml
+modelClass: Tiipiik\Catalog\Models\Brand
+defaultRedirect: tiipiik/catalog/brands
+create:
+    title: tiipiik.catalog::lang.config.form.brand_create_title
+    redirect: tiipiik/catalog/brands/update/:id
+    redirectClose: tiipiik/catalog/brands
+update:
+    title: tiipiik.catalog::lang.config.form.brand_update_title
+    redirect: tiipiik/catalog/brands
+    redirectClose: tiipiik/catalog/brands

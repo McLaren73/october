@@ -1,0 +1,51 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: Name
+        placeholder: tiipiik.catalog::lang.products.title_ph
+        span: left
+
+    slug:
+        label: Slug
+        placeholder: tiipiik.catalog::lang.products.slug_ph
+        span: right
+        attributes:
+            data-input-preset: 'input[name="Brand[name]"]'
+            data-input-preset-type: slug
+            data-input-preset-closest-parent: form
+
+    published:
+        label: Is published
+        type: switch
+
+tabs:
+    fields:
+        description:
+            tab: Details
+            label: Description
+            placeholder: tiipiik.catalog::lang.products.description
+            type: richeditor
+
+        meta_title:
+            tab: SEO
+            type: text
+            label: Meta title
+            placeholder: Define meta title
+
+        meta_desc:
+            tab: SEO
+            type: textarea
+            label: Meta description
+            placeholder: Define meta description
+
+secondaryTabs:
+    fields:
+        cover_image:
+            label: Image
+            type: fileupload
+            mode: image
+            imageHeight: 260
+            imageWidth: 260

@@ -1,0 +1,24 @@
+title = "Článek"
+url = "/blog/clanek/:slug"
+layout = "Layout"
+is_hidden = 0
+
+[blogPost]
+slug = "{{ :slug }}"
+categoryPage = "blog"
+==
+<?php
+function onEnd()
+{
+	$this->page->title = $this['post']->title;
+	
+	// Sets a successful message
+    Flash::success('Settings successfully saved!');
+}
+?>
+==
+<div class="container">
+	<article>
+		{% component 'blogPost' %}
+	</article>
+</div>

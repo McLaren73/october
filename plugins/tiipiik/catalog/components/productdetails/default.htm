@@ -1,0 +1,45 @@
+<div class="jumbotron">
+    <h1>{{ product.title }}</h1>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-8">
+            {{ product.description|raw }}
+            <br><b>Cena</b> : {{ product.price }} Kč
+            {#<br><b>Discount price</b> : {{ product.discount_price }}€#}
+            <br><b>Dostupný počet</b> : {{  product.items_available  }}
+
+            {% if product.vylozeni %}<br><b>Vyložení</b> : {{  product.vylozeni  }}{% endif %}
+            
+            <br><b>Výška zdvihu</b> : {{  product.vyska-zdvihu  }}
+            <br><b>Nosnost</b> : {{  product.nosnost  }}
+            {% if product.brand %}
+            <hr>
+            Brand : <a href="{{ product.brand.url }}" title="{{ product.brand.name }}">{{ product.brand.name }}</a>
+            {% endif %}
+            {% if product.stores %}
+            <hr>
+            {% for store in product.stores %}
+            Store : <a href="{{ store.url }}" title="{{ store.name }}">{{ store.name }}</a>
+            {% endfor %}
+            {% endif %}
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            <a href="{{ product.featured_images[0].thumb(800, auto) }}" target="_blank" title="{{ product.featured_images[0].title }}">
+                <img src="{{ product.featured_images[0].thumb(200, 200) }}" title="{{ product.featured_images[0].title }}" alt="{{ product.featured_images[0].description }}">
+            </a>
+        </div>
+        {% if product.categories|length != 0 %}
+        <div class="row">
+            <h4>Související kategorie</h4>
+            <ul>
+                {% for category in product.categories %}
+                <li>
+                    <a href="{{ category.url }}" title="{{ category.name }}">{{ category.name }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+        </div>
+        {% endif %}
+    </div>
+</div>

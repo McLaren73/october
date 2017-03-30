@@ -1,0 +1,22 @@
+1490877947a:1:{s:13:"rezervace.htm";a:10:{s:8:"fileName";s:13:"rezervace.htm";s:7:"content";s:924:"title = "Rezervace"
+url = "/rezervace"
+layout = "Layout"
+is_hidden = 0
+
+[reservationForm]
+==
+<div class="container">
+
+	<h2 class="headline">Rezervace</h2>
+	<p class="description">Jedná se o plugin <a href="https://octobercms.com/plugin/vojtasvoboda-reservations" target="_blank">Reservations</a>, použitý je například na stránkách <a href="http://www.transportartists.com" target="_blank">Transportartists</a> (na tomto webu je použit i <a href="https://octobercms.com/plugin/vojtasvoboda-reviews" target="_blank">widget pro recenze zákazníků</a>). Měl by podporovat překlady. Využívá AJAXové odeslání formu. Plugin odesílá potvrzovací mail návštěvníkovi, lze změnit na odeslání libovolnému uživateli. Zvážit možnost použití externí služby pro složitější případy - www.reservio.com, www.restu.cz, lekar.znamylekar.cz/cenik.</p>
+	
+	{% component 'reservationForm' %}
+	
+</div>";s:5:"mtime";i:1490265008;s:6:"markup";s:831:"<div class="container">
+
+	<h2 class="headline">Rezervace</h2>
+	<p class="description">Jedná se o plugin <a href="https://octobercms.com/plugin/vojtasvoboda-reservations" target="_blank">Reservations</a>, použitý je například na stránkách <a href="http://www.transportartists.com" target="_blank">Transportartists</a> (na tomto webu je použit i <a href="https://octobercms.com/plugin/vojtasvoboda-reviews" target="_blank">widget pro recenze zákazníků</a>). Měl by podporovat překlady. Využívá AJAXové odeslání formu. Plugin odesílá potvrzovací mail návštěvníkovi, lze změnit na odeslání libovolnému uživateli. Zvážit možnost použití externí služby pro složitější případy - www.reservio.com, www.restu.cz, lekar.znamylekar.cz/cenik.</p>
+	
+	{% component 'reservationForm' %}
+	
+</div>";s:4:"code";N;s:5:"title";s:9:"Rezervace";s:3:"url";s:10:"/rezervace";s:6:"layout";s:6:"Layout";s:9:"is_hidden";s:1:"0";s:15:"reservationForm";a:0:{}}}

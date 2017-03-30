@@ -1,0 +1,21 @@
+title = "Překlady"
+url = "/preklady"
+layout = "Layout"
+is_hidden = 0
+
+[viewBag]
+localeUrl[en] = "/preklady"
+==
+<div class="container">
+
+	<h2 class="headline">Překlady</h2>
+	
+	<div class="description">
+		<p>Jedná se o plugin <a href="//octobercms.com/plugin/rainlab-translate" target="_blank">Translate</a>.</p>
+		<p>{{ 'Tato věta je testovací překlad.'|_ }}</p>
+		
+		{{ 'Ahoj :name!'|_({ name: 'příteli'|_ }) }}
+		
+	</div>
+	
+</div>

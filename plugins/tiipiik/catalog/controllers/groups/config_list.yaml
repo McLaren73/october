@@ -1,0 +1,16 @@
+# ===================================
+#  List Behavior Config
+# ===================================
+
+title: tiipiik.catalog::lang.config.list.group_title
+list: ~/plugins/tiipiik/catalog/models/group/columns.yaml
+modelClass: Tiipiik\Catalog\Models\Group
+recordUrl: tiipiik/catalog/groups/update/:id
+noRecordsMessage: backend::lang.list.no_records
+recordsPerPage: 20
+showSetup: true
+showSorting: true
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: backend::lang.list.search_prompt

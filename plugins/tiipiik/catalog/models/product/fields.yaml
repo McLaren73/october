@@ -1,0 +1,98 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+
+    title:
+        label:  tiipiik.catalog::lang.products.title
+        placeholder: tiipiik.catalog::lang.products.title_ph
+        span: left
+
+    slug:
+        label: tiipiik.catalog::lang.products.slug
+        span: right
+        placeholder: tiipiik.catalog::lang.products.slug_ph
+        attributes:
+            data-input-preset: 'input[name="Product[title]"]'
+            data-input-preset-type: slug
+            data-input-preset-closest-parent: form
+
+    is_published:
+        label: tiipiik.catalog::lang.products.published
+        type: switch
+
+tabs:
+    fields:
+
+        items_available:
+            tab: tiipiik.catalog::lang.products.details_tab_title
+            type: number
+            label: tiipiik.catalog::lang.products.items_available
+            placeholder: tiipiik.catalog::lang.products.items_available_ph
+            span: full
+
+        price:
+            tab: tiipiik.catalog::lang.products.details_tab_title
+            type: number
+            label: tiipiik.catalog::lang.products.price
+            placeholder: tiipiik.catalog::lang.products.price_ph
+            span: left
+            default: "0.00"
+            required: true
+
+        discount_price:
+            tab: tiipiik.catalog::lang.products.details_tab_title
+            type: number
+            label: tiipiik.catalog::lang.products.discount_price
+            placeholder: tiipiik.catalog::lang.products.discount_price_ph
+            default: "0.00"
+            span: right
+
+        description:
+            tab: tiipiik.catalog::lang.products.details_tab_title
+            label: tiipiik.catalog::lang.products.description
+            placeholder: tiipiik.catalog::lang.products.description_ph
+            type: richeditor
+
+        categories:
+            tab: tiipiik.catalog::lang.products.category_tab_title
+            type: relation
+            commentAbove: tiipiik.catalog::lang.products.categories_cmt
+
+        group:
+            tab: Group
+            type: relation
+            required: true
+
+        meta_title:
+            tab: SEO
+            type: text
+            label: Meta title
+            placeholder: Define meta title
+
+        meta_desc:
+            tab: SEO
+            type: textarea
+            label: Meta description
+            placeholder: Define meta description
+
+        brand:
+            tab: Brand
+            type: relation
+            required: false
+            emptyOption: -- No brand --
+
+        stores:
+            tab: Stores
+            type: relation
+            commentAbove: Select the store this product is related to
+
+secondaryTabs:
+    fields:
+        featured_images:
+            label: tiipiik.catalog::lang.products.featured_images
+            type: fileupload
+            mode: image
+            imageHeight: 260
+            imageWidth: 260

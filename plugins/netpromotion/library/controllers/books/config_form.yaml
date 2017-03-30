@@ -1,0 +1,11 @@
+name: Books
+modelClass: Netpromotion\Library\Models\Book
+form: $/netpromotion/library/models/book/fields.yaml
+defaultRedirect: netpromotion/library/books
+create:
+    redirect: 'netpromotion/library/books/update/:id'
+    redirectClose: netpromotion/library/books
+update:
+    redirect: netpromotion/library/books
+    redirectClose: netpromotion/library/books
+preview: {  }

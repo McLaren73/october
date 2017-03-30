@@ -1,0 +1,16 @@
+columns:
+    title:
+        label: 'netpromotion.library::lang.book.title'
+        type: text
+        searchable: true
+        sortable: true
+    author:
+        label: 'netpromotion.library::lang.book.author'
+        type: text
+        searchable: true
+        sortable: true
+    year:
+        label: 'netpromotion.library::lang.book.year'
+        type: text
+        searchable: true
+        sortable: true

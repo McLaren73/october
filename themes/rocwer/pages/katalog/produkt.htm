@@ -1,0 +1,16 @@
+title = "Produkt"
+url = "/katalog/produkt/:slug"
+layout = "Layout"
+is_hidden = 0
+
+[product_details]
+slug = "{{ :slug }}"
+categoryPage = "katalog/detail-kategorie"
+==
+<div class="container">
+
+	<h2 class="headline">Katalog – produkt</h2>
+	
+	{% component 'product_details' %}
+	
+</div>

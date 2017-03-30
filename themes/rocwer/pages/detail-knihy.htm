@@ -1,0 +1,29 @@
+title = "Detail Knihy"
+url = "/kniha/:slug"
+layout = "Layout"
+is_hidden = 0
+
+[builderDetails]
+modelClass = "Netpromotion\Library\Models\Book"
+identifierValue = "{{ :slug }}"
+modelKeyColumn = "slug"
+displayColumn = "title"
+notFoundMessage = "Record not found"
+
+[viewBag]
+localeUrl[en] = "/detail-knihy"
+==
+<div class="container">
+
+	{% set record = builderDetails.record %}
+{% set displayColumn = builderDetails.displayColumn %}
+{% set notFoundMessage = builderDetails.notFoundMessage %}
+
+{% if record %}
+    <h1>{{ attribute(record, displayColumn) }}</h1>
+    {{ record.short_description|raw }}
+{% else %}
+    {{ notFoundMessage }}
+{% endif %}
+
+</div>

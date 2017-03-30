@@ -1,0 +1,33 @@
+title = "Blog Kategorie"
+url = "/blog/kategorie/:slug"
+layout = "Layout"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = "{{ :slug }}"
+postsPerPage = 10
+noPostsMessage = "No posts found"
+sortOrder = "published_at desc"
+categoryPage = "blog/kategorie"
+postPage = "blog/clanek"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "blog/kategorie"
+==
+<div class="container">
+
+	<h2 class="headline">Blog - výpis kategorie</h2>
+
+	<div class="row">
+		<div class="col-sm-8">
+			{% component 'blogPosts' %}
+		</div>
+		<div class="col-sm-4">
+			{% component 'blogCategories' %}
+		</div>
+	</div>
+	
+</div>

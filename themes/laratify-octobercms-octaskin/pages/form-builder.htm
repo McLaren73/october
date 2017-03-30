@@ -1,0 +1,25 @@
+title = "form-builder"
+url = "/form-builder"
+layout = "octaskin"
+is_hidden = 0
+
+[renderForm]
+formCode = "form_builder_example"
+==
+<section id="lt-header" class="lt-section lt-section-fullwidth section">
+  <div class="lt-container container">
+    <div class="lt-content lt-header-content">
+      {% partial "pages-about/header" %}
+    </div>
+  </div>
+</section>
+
+<section>	
+	<div class="lt-container container">
+		<br><br>
+		<h2>Test pluginu form builder</h2>
+		<br><br>
+		{% component 'renderForm' %}
+		<br><br><br><br>
+	</div>
+</section>

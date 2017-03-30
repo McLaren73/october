@@ -1,0 +1,33 @@
+title = "Galerie"
+url = "/galerie"
+layout = "Layout"
+is_hidden = 0
+
+[galleryId]
+idGallery = 1
+lang = "Gallery"
+jqueryinject = "yes"
+thumbnail = "true"
+caption = "true"
+desc = "true"
+counter = "true"
+controls = "true"
+preload = 1
+mode = "fade"
+speed = 500
+loop = "true"
+auto = "false"
+pause = 2000
+escKey = "true"
+height = 200
+width = 200
+resizer = "crop"
+==
+<div class="container">
+
+	<h2 class="headline">Galerie</h2>
+	<p class="description">Jedná se o plugin <a href="//octobercms.com/plugin/raviraj-rjgallery" target="_blank">RJGallery</a>. Umožňuje tvorbu různých galerií a přiřazování do kategorií.</p>
+	
+	{% component 'galleryId' %}
+	
+</div>

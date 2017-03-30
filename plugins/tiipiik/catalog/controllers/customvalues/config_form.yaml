@@ -1,0 +1,17 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: tiipiik.catalog::lang.config.form.customvalue_name
+form: ~/plugins/tiipiik/catalog/models/customvalue/fields.yaml
+modelClass: Tiipiik\Catalog\Models\CustomValue
+defaultRedirect: tiipiik/catalog/customvalues
+showCheckboxes: false
+#create:
+#    title: Create CustomValue
+#    redirect: tiipiik/catalog/customvalues/update/:id
+#    redirectClose: tiipiik/catalog/customvalues
+update:
+    title: tiipiik.catalog::lang.config.form.customvalue_update
+    redirect: tiipiik/catalog/customvalues
+    redirectClose: tiipiik/catalog/customvalues

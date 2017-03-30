@@ -1,0 +1,6 @@
+plugin:
+    name: 'netpromotion.testplugin::lang.plugin.name'
+    description: 'netpromotion.testplugin::lang.plugin.description'
+    author: netpromotion
+    icon: oc-icon-adjust
+    homepage: ''

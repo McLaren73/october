@@ -1,0 +1,15 @@
+title = "Rezervace"
+url = "/rezervace"
+layout = "Layout"
+is_hidden = 0
+
+[reservationForm]
+==
+<div class="container">
+
+	<h2 class="headline">Rezervace</h2>
+	<p class="description">Jedná se o plugin <a href="https://octobercms.com/plugin/vojtasvoboda-reservations" target="_blank">Reservations</a>, použitý je například na stránkách <a href="http://www.transportartists.com" target="_blank">Transportartists</a> (na tomto webu je použit i <a href="https://octobercms.com/plugin/vojtasvoboda-reviews" target="_blank">widget pro recenze zákazníků</a>). Měl by podporovat překlady. Využívá AJAXové odeslání formu. Plugin odesílá potvrzovací mail návštěvníkovi, lze změnit na odeslání libovolnému uživateli. Zvážit možnost použití externí služby pro složitější případy - www.reservio.com, www.restu.cz, lekar.znamylekar.cz/cenik.</p>
+	
+	{% component 'reservationForm' %}
+	
+</div>

@@ -1,0 +1,33 @@
+1490877947a:1:{s:9:"knihy.htm";a:11:{s:8:"fileName";s:9:"knihy.htm";s:7:"content";s:667:"title = "Knihy"
+url = "/knihy"
+layout = "Layout"
+is_hidden = 0
+
+[viewBag]
+localeUrl[en] = "/knihy"
+
+[builderList]
+modelClass = "Netpromotion\Library\Models\Book"
+scope = "-"
+displayColumn = "title"
+noRecordsMessage = "No records found"
+detailsPage = "detail-knihy"
+detailsKeyColumn = "slug"
+detailsUrlParameter = "slug"
+pageNumber = "{{ :page }}"
+==
+<div class="container">
+
+	<h2 class="headline">Builder</h2>
+	<p class="description">Jedná se o plugin <a href="//octobercms.com/plugin/rainlab-builder" target="_blank">Builder</a>. Umožňuje tvorbu libovolného pluginu a datové struktury, kterou pak lze vypsat.</p>
+	
+	{% component 'builderList' %}
+	
+</div>";s:5:"mtime";i:1490792369;s:6:"markup";s:317:"<div class="container">
+
+	<h2 class="headline">Builder</h2>
+	<p class="description">Jedná se o plugin <a href="//octobercms.com/plugin/rainlab-builder" target="_blank">Builder</a>. Umožňuje tvorbu libovolného pluginu a datové struktury, kterou pak lze vypsat.</p>
+	
+	{% component 'builderList' %}
+	
+</div>";s:4:"code";N;s:5:"title";s:5:"Knihy";s:3:"url";s:6:"/knihy";s:6:"layout";s:6:"Layout";s:9:"is_hidden";s:1:"0";s:7:"viewBag";a:1:{s:9:"localeUrl";a:1:{s:2:"en";s:6:"/knihy";}}s:11:"builderList";a:8:{s:10:"modelClass";s:32:"Netpromotion\Library\Models\Book";s:5:"scope";s:1:"-";s:13:"displayColumn";s:5:"title";s:16:"noRecordsMessage";s:16:"No records found";s:11:"detailsPage";s:12:"detail-knihy";s:16:"detailsKeyColumn";s:4:"slug";s:19:"detailsUrlParameter";s:4:"slug";s:10:"pageNumber";s:11:"{{ :page }}";}}}

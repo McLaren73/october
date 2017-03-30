@@ -1,0 +1,18 @@
+# ===================================
+#  Form Behavior Config
+# ===================================
+
+name: tiipiik.catalog::lang.config.form.category_name
+form: ~/plugins/tiipiik/catalog/models/category/fields.yaml
+modelClass: Tiipiik\Catalog\Models\Category
+defaultRedirect: tiipiik/catalog/categories
+
+create:
+    title: tiipiik.catalog::lang.config.form.category_create_title
+    redirect: tiipiik/catalog/categories/update/:id
+    redirectClose: tiipiik/catalog/categories
+
+update:
+    title: tiipiik.catalog::lang.config.form.category_update_title
+    redirect: tiipiik/catalog/categories
+    redirectClose: tiipiik/catalog/categories

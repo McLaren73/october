@@ -1,0 +1,36 @@
+1490877947a:1:{s:21:"katalog/kategorie.htm";a:10:{s:8:"fileName";s:21:"katalog/kategorie.htm";s:7:"content";s:1051:"title = "Katalog"
+url = "/katalog"
+layout = "Layout"
+is_hidden = 0
+
+[categories]
+slug = "{{ :slug }}"
+displayEmpty = 1
+noProductCategoriesMessage = "No category found"
+subCategories = 0
+renderView = "image_list"
+categoryPage = "katalog/detail-kategorie"
+==
+<div class="container">
+
+	<h2 class="headline">Katalog – všechny kategorie</h2>
+	<div class="description">
+		<p></p>Jedná se o plugin <a href="//octobercms.com/plugin/tiipiik-catalog" target="_blank">Catalog</a>. <a href="http://octobercms-catalog.yohann-decharraud.com/how-it-works/catalog-static-page-menu/" target="_blank">Podporuje plugin static pages</a>.</p>
+	<p>Renderovací šablona lze taktéž <a href="http://octobercms-catalog.yohann-decharraud.com/how-it-works/usage/" target="_blank">libovolně upravovat</a>.</p>
+	<p>Umožňuje přidání vlastních custom fieldů a jejich <a href="//octobercms-catalog.yohann-decharraud.com/how-it-works/usage/" target="_blank">výpis v šabloně lze libovolně upravovat</a>.</p>
+	</div>
+	
+	{% component 'categories' %}
+	
+</div>";s:5:"mtime";i:1490700172;s:6:"markup";s:794:"<div class="container">
+
+	<h2 class="headline">Katalog – všechny kategorie</h2>
+	<div class="description">
+		<p></p>Jedná se o plugin <a href="//octobercms.com/plugin/tiipiik-catalog" target="_blank">Catalog</a>. <a href="http://octobercms-catalog.yohann-decharraud.com/how-it-works/catalog-static-page-menu/" target="_blank">Podporuje plugin static pages</a>.</p>
+	<p>Renderovací šablona lze taktéž <a href="http://octobercms-catalog.yohann-decharraud.com/how-it-works/usage/" target="_blank">libovolně upravovat</a>.</p>
+	<p>Umožňuje přidání vlastních custom fieldů a jejich <a href="//octobercms-catalog.yohann-decharraud.com/how-it-works/usage/" target="_blank">výpis v šabloně lze libovolně upravovat</a>.</p>
+	</div>
+	
+	{% component 'categories' %}
+	
+</div>";s:4:"code";N;s:5:"title";s:7:"Katalog";s:3:"url";s:8:"/katalog";s:6:"layout";s:6:"Layout";s:9:"is_hidden";s:1:"0";s:10:"categories";a:6:{s:4:"slug";s:11:"{{ :slug }}";s:12:"displayEmpty";s:1:"1";s:26:"noProductCategoriesMessage";s:17:"No category found";s:13:"subCategories";s:1:"0";s:10:"renderView";s:10:"image_list";s:12:"categoryPage";s:24:"katalog/detail-kategorie";}}}

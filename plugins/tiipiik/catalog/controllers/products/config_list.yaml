@@ -1,0 +1,20 @@
+# ===================================
+#  List Behavior Config
+# ===================================
+
+title: tiipiik.catalog::lang.config.list.title
+list: ~/plugins/tiipiik/catalog/models/product/columns.yaml
+modelClass: Tiipiik\Catalog\Models\Product
+recordUrl: tiipiik/catalog/products/update/:id
+noRecordsMessage: backend::lang.list.no_records
+recordsPerPage: 20
+showCheckboxes: true
+showSetup: true
+showSorting: true
+
+toolbar:
+    buttons: list_toolbar
+    search:
+        prompt: backend::lang.list.search_prompt
+
+filter: config_filter.yaml

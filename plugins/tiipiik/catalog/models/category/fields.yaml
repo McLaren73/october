@@ -1,0 +1,32 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label: tiipiik.catalog::lang.products.title
+        placeholder: tiipiik.catalog::lang.products.title_ph
+        span: left
+
+    slug:
+        label: tiipiik.catalog::lang.products.slug
+        placeholder: tiipiik.catalog::lang.products.slug_ph
+        span: right
+        attributes:
+            data-input-preset: 'input[name="Category[name]"]'
+            data-input-preset-type: slug
+            data-input-preset-closest-parent: form
+
+    description:
+        label: tiipiik.catalog::lang.products.description
+        placeholder: tiipiik.catalog::lang.products.description
+        type: richeditor
+
+secondaryTabs:
+    fields:
+        cover:
+            label: Image
+            type: fileupload
+            mode: image
+            imageHeight: 260
+            imageWidth: 260

@@ -1,0 +1,34 @@
+title = "Blog"
+url = "/blog/:page?"
+layout = "Layout"
+is_hidden = 0
+
+[blogPosts]
+pageNumber = "{{ :page }}"
+categoryFilter = ":slug"
+postsPerPage = 5
+noPostsMessage = "Žádné příspěvky."
+sortOrder = "published_at desc"
+categoryPage = "blog/kategorie"
+postPage = "blog/clanek"
+
+[blogCategories]
+slug = "{{ :slug }}"
+displayEmpty = 0
+categoryPage = "blog/kategorie"
+==
+<div class="container">
+
+	<h2 class="headline">Blog - výpis článků</h2>
+	<p class="description">Jedná se o plugin <a href="//octobercms.com/plugin/rainlab-blog" target="_blank">Blog</a>.</p>
+	
+	<div class="row">
+		<div class="col-sm-8">
+			{% component 'blogPosts' %}
+		</div>
+		<div class="col-sm-4">
+			{% component 'blogCategories' %}
+		</div>
+	</div>
+	
+</div>

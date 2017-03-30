@@ -1,0 +1,12 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    #product_id:
+    #    label: Product Id
+    #    hidden: true
+    
+    value:
+        label: tiipiik.catalog::lang.custom_value.value_label
+        type: textarea

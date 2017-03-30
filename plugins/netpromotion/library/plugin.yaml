@@ -1,0 +1,22 @@
+plugin:
+    name: 'netpromotion.library::lang.plugin.name'
+    description: 'netpromotion.library::lang.plugin.description'
+    author: netpromotion
+    icon: oc-icon-book
+    homepage: ''
+permissions:
+    netpromotion.library.manage_book:
+        tab: 'netpromotion.library::lang.plugin.name'
+        label: 'netpromotion.library::lang.book.manage_books'
+navigation:
+    Library:
+        label: 'netpromotion.library::lang.plugin.name'
+        url: netpromotion/library/books
+        icon: icon-book
+        permissions:
+            - netpromotion.library.manage_book
+        sideMenu:
+            books:
+                label: Books
+                url: netpromotion/library/books
+                icon: icon-bookmark

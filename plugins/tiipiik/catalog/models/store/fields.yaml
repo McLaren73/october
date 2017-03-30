@@ -1,0 +1,59 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+    name:
+        label:  Store name
+        placeholder: store name
+        span: left
+
+    slug:
+        label: Store slug
+        span: right
+        placeholder: Store slug
+        attributes:
+            data-input-preset: 'input[name="Store[name]"]'
+            data-input-preset-type: slug
+            data-input-preset-closest-parent: form
+            data-input-preset-closest-parent: form
+
+    is_activated:
+        label: Is actiavted
+        type: switch
+
+tabs:
+    fields:
+        description:
+            tab: Details
+            label: Store description
+            placeholder: Store description
+            type: richeditor
+
+        meta_title:
+            tab: SEO
+            type: text
+            label: Meta title
+            placeholder: Define meta title
+
+        meta_desc:
+            tab: SEO
+            type: textarea
+            label: Meta description
+            placeholder: Define meta description
+
+        group:
+            tab: Group
+            label: Group
+            type: relation
+            required: true
+
+secondaryTabs:
+    fields:
+
+        cover_image:
+            label: Store cover image
+            type: fileupload
+            mode: image
+            imageHeight: 260
+            imageWidth: 260

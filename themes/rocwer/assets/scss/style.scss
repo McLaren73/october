@@ -1,0 +1,89 @@
+/* bootstrap overrides */
+.navbar{
+	border-radius: 0;
+}
+
+.navbar-nav>li>a {
+    padding: 15px;
+    line-height: 50px;
+    height: 50px;
+}
+
+/* custom */
+
+$color-np-blue: #002366;
+
+body {
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+}
+
+.content {
+  flex-basis: auto;
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+footer {
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+}
+
+.headline{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    letter-spacing: 3px;
+    color: $color-np-blue;
+}
+
+footer {
+    width: 100%;
+    min-height: 100px;
+    background: $color-np-blue;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 30px;
+    margin-top: 100px;
+    text-align: center;
+    letter-spacing: 3px;
+}
+
+.control-multi-file-uploader{
+    display: block;
+    float: left;
+    width: calc(100% - 30px);
+    margin-left: 15px;
+    background: white;
+    padding: 15px 15px 5px 15px;
+    border: 1px dashed #cccccc;
+    border-radius: 4px;
+}
+
+.description{
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+article img{
+	display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+#galleryId li {
+    border: 1px solid #e4e4e4;
+    box-sizing: content-box;
+}
+
+.lang{
+	width: 100px;
+    float: right;
+    margin-top: 7px;
+}
+
+
+
+
+

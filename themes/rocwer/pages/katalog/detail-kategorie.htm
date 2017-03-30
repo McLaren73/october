@@ -1,0 +1,22 @@
+title = "Detail Kategorie"
+url = "/katalog/detail-kategorie/:slug"
+layout = "Layout"
+is_hidden = 0
+
+[product_list]
+categorySlug = "{{ :slug }}"
+sortOrder = "title asc"
+useCategoryFilter = 0
+productPage = "katalog/produkt"
+productPageSlug = "{{ :slug }}"
+noProductsMessage = "No product found"
+productsPerPage = 10
+pageParam = ":page"
+==
+<div class="container">
+	
+	<h2 class="headline">Katalog – detail kategorie</h2>
+	
+	{% component 'product_list' %}
+	
+</div>

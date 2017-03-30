@@ -1,0 +1,62 @@
+subject = "Contact Form"
+layout = "form_builder"
+==
+
+Hi there,
+
+here is your form:
+
+Name: {{ name }}
+Subject: {{ subject }}
+E-mail: {{ email }}
+Phone: {{ phone }}
+Message: {{ content_message }}
+
+May the Force be with you!
+
+==
+
+<!-- START CENTERED WHITE CONTAINER -->
+<table class="main">
+
+    <!-- START MAIN CONTENT AREA -->
+    <tr>
+        <td class="wrapper">
+            <table border="0" cellpadding="0" cellspacing="0">
+                <tr>
+                    <td>
+                        <p>Hi there,</p>
+                        <p>here is your form:</p>
+
+                        <table class="contact">
+                            <tr>
+                                <td>Name</td>
+                                <td>{{ name }}</td>
+                            </tr>
+                            <tr>
+                                <td>Subject</td>
+                                <td>{{ subject }}</td>
+                            </tr>
+                            <tr>
+                                <td>E-mail</td>
+                                <td>{{ email }}</td>
+                            </tr>
+                            <tr>
+                                <td>Phone</td>
+                                <td>{{ phone }}</td>
+                            </tr>
+                            <tr>
+                                <td>Message</td>
+                                <td>{{ content_message }}</td>
+                            </tr>
+                        </table>
+                        <br>
+                        <p>May the Force be with you!</p>
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+
+    <!-- END MAIN CONTENT AREA -->
+</table>
