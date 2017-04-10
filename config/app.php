@@ -16,7 +16,7 @@ return [
     |
     */
 
-    'debug' => true,
+    'debug' => false,
 
     /*
     |--------------------------------------------------------------------------
@@ -29,7 +29,7 @@ return [
     |
     */
 
-    'url' => 'http://october.netpromotion.agency/subdom/october/',
+    'url' => env('BASE_URL'),
 
     /*
     |--------------------------------------------------------------------------
@@ -42,7 +42,7 @@ return [
     |
     */
 
-    'timezone' => 'UTC',
+    'timezone' => 'Europe/Prague',
 
     /*
     |--------------------------------------------------------------------------
@@ -81,9 +81,9 @@ return [
     |
     */
 
-    'key' => 'oVqPXeefjxFmdboHoIAVLWNklGASlMsO',
+    'key' => env('ENCRYPTION_KEY'),
 
-    'cipher' => 'AES-256-CBC',
+    'cipher' => env('ENCRYPTION_CIPHER'),
 
     /*
     |--------------------------------------------------------------------------

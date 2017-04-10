@@ -54,11 +54,11 @@ return [
 
         'mysql' => [
             'driver'    => 'mysql',
-            'host'      => 'xxxxxxxxxxx',
-            'port'      => 3306,
-            'database'  => 'xxxxxxxxxxx',
-            'username'  => 'xxxxxxxxxxx',
-            'password'  => 'xxxxxxxxxxx',
+            'host'      => 'localhost',
+            'port'      => '',
+            'database'  => env('DATABASE_NAME'),
+            'username'  => env('DATABASE_USER'),
+            'password'  => env('DATABASE_PASSWORD'),
             'charset'   => 'utf8',
             'collation' => 'utf8_unicode_ci',
             'prefix'    => '',
@@ -69,8 +69,8 @@ return [
             'host'     => 'localhost',
             'port'     => '',
             'database' => 'database',
-            'username' => 'xxxxxxxxxxx',
-            'password' => 'xxxxxxxxxxx',
+            'username' => 'root',
+            'password' => '',
             'charset'  => 'utf8',
             'prefix'   => '',
             'schema'   => 'public',
@@ -78,10 +78,10 @@ return [
 
         'sqlsrv' => [
             'driver'   => 'sqlsrv',
-            'host'     => 'xxxxxxxxxxx',
+            'host'     => 'localhost',
             'port'     => '',
-            'database' => 'xxxxxxxxxxx',
-            'username' => 'xxxxxxxxxxx',
+            'database' => 'database',
+            'username' => 'root',
             'password' => '',
             'prefix'   => '',
         ],
@@ -116,7 +116,12 @@ return [
 
         'cluster' => false,
 
-        'default' => 'mysql',
+        'default' => [
+            'host'     => '127.0.0.1',
+            'password' => null,
+            'port'     => 6379,
+            'database' => 0,
+        ],
 
     ],
 

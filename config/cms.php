@@ -19,12 +19,12 @@ return [
     |--------------------------------------------------------------------------
     |
     | If you are developing with October, it is important to have the latest
-    | code base, set this value to 'true' to tell the platform to download
+    | code base. Set this value to 'true' to tell the platform to download
     | and use the development copies of core files and plugins.
     |
     */
 
-    'edgeUpdates' => false,
+    'edgeUpdates' => true,
 
     /*
     |--------------------------------------------------------------------------
@@ -36,7 +36,20 @@ return [
     |
     */
 
-    'backendUri' => '/backend',
+    'backendUri' => 'backend',
+
+    /*
+    |--------------------------------------------------------------------------
+    | Back-end force HTTPS security
+    |--------------------------------------------------------------------------
+    |
+    | Use this setting to force a secure protocol when accessing any back-end
+    | pages, including the authentication pages. If set to null, this setting
+    | is enabled when debug mode (app.debug) is disabled.
+    |
+    */
+
+    'backendForceSecure' => null,
 
     /*
     |--------------------------------------------------------------------------
@@ -49,7 +62,7 @@ return [
     |
     */
 
-    'backendTimezone' => 'UTC',
+    'backendTimezone' => 'Europe/Prague',
 
     /*
     |--------------------------------------------------------------------------
@@ -173,12 +186,12 @@ return [
     |
     | If deep hashing is enabled, the combiner cache will be reset when a change
     | is detected on imported files, in addition to those referenced directly.
-    | This will cause slower page performance. If set to null, assets are
-    | minified, when debug mode (app.debug) is disabled.
+    | This will cause slower page performance. If set to null, deep hashing
+    | is used when debug mode (app.debug) is enabled.
     |
     */
 
-    'enableAssetDeepHashing' => false,
+    'enableAssetDeepHashing' => null,
 
     /*
     |--------------------------------------------------------------------------
@@ -276,7 +289,7 @@ return [
     |
     */
 
-    'defaultMask' => ['file' => '777', 'folder' => '777'],
+    'defaultMask' => ['file' => null, 'folder' => null],
 
     /*
     |--------------------------------------------------------------------------
@@ -284,8 +297,8 @@ return [
     |--------------------------------------------------------------------------
     |
     | If safe mode is enabled, the PHP code section is disabled in the CMS
-    | for security reasons. If set to null, safe mode is on when debug mode
-    | (app.debug) is disabled.
+    | for security reasons. If set to null, safe mode is enabled when
+    | debug mode (app.debug) is disabled.
     |
     */
 
@@ -301,6 +314,19 @@ return [
     |
     */
 
-    'enableCsrfProtection' => false,
+    'enableCsrfProtection' => true,
+
+    /*
+    |--------------------------------------------------------------------------
+    | Force bytecode invalidation
+    |--------------------------------------------------------------------------
+    |
+    | When using OPcache with opcache.validate_timestamps set to 0 or APC
+    | with apc.stat set to 0 and Twig cache enabled, clearing the template
+    | cache won't update the cache, set to true to get around this.
+    |
+    */
+
+    'forceBytecodeInvalidation' => true,
 
 ];
